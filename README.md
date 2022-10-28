@@ -34,7 +34,7 @@ while True:
  
  
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626295.png" width="179" height="79" alt="Flame" /></a>
-  ###  Codigo
+Codigo
   ```from machine import Pin
 import utime
 
@@ -58,8 +58,9 @@ utime.sleep(0.1)
   
  <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626297.png" width="230" height="48" alt="RGB LED" /></a>
   Codigo
-   ´´´python
-  from machine import Pin
+  
+```
+from machine import Pin
 import time
 
 led_pins = [16,17,18] # pins where RGB LED is wired
@@ -72,8 +73,7 @@ while True: # loop infinitely
         time.sleep(delay_t) # wait
         led.low() # led low
         time.sleep(delay_t) # wait
-        
-        ´´´
+ ```
 
   ### Corrida
   
@@ -115,15 +115,27 @@ utime.sleep(1)
   
   ### * Imagenes del circuito
   
- 
+ <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626306.png" width="172" height="93" alt="Realy" /></a>
 
-  ### * Codigo
-  
+   Codigo
+ ```
+ from machine import Pin
+import utime
+
+relay = Pin(18,Pin.OUT)
+
+while True:
+    
+    relay.value(1)
+    utime.sleep(0.5)
+    relay.value(0)
+    utime.sleep(0.5)
+```
   ### * Corrida
   
   ### * Imagenes del circuito
   
-## Linear Hall
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626307.png" width="303" height="79" alt="Linear Hall" /></a>
   ### * Codigo
   
   ### * Corrida
