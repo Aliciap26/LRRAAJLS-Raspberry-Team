@@ -34,7 +34,7 @@ while True:
  
  
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626295.png" width="179" height="79" alt="Flame" /></a>
-  ### * Codigo
+  ###  Codigo
   ```from machine import Pin
 import utime
 
@@ -48,44 +48,75 @@ while True:
    else:
        print("No Flame")
        utime.sleep(1)
-utime.sleep(0.1)```
+utime.sleep(0.1) 
+```
 
-  ### * Corrida
+  ###  Corrida
   
-  ### * Imagenes del circuito
-  
-  
-## <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626297.png" width="230" height="48" alt="RGB LED" /></a>
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
+  ###  Imagenes del circuito
   
   
-## Heartbeat
-  ### * Codigo
+ <a href="https://cooltext.com"><img src="https://images.cooltext.com/5626297.png" width="230" height="48" alt="RGB LED" /></a>
+  Codigo
+   ´´´python
+  from machine import Pin
+import time
+
+led_pins = [16,17,18] # pins where RGB LED is wired
+leds = [Pin(led_pins[0],Pin.OUT),Pin(led_pins[1],Pin.OUT),
+        Pin(led_pins[2],Pin.OUT)] # pin control array
+delay_t = 0.1 # seconds to delay between toggles
+while True: # loop infinitely
+    for led in leds: # loop through each led
+        led.high() # led high
+        time.sleep(delay_t) # wait
+        led.low() # led low
+        time.sleep(delay_t) # wait
+        
+        ´´´
+
+  ### Corrida
   
-  ### * Corrida
+  ###  Imagenes del circuito
   
-  ### * Imagenes del circuito
+  
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626301.png" width="258" height="78" alt=" Heartbeat" /></a>
+  ###  Codigo
+  
+  ### Corrida
+  
+  ###  Imagenes del circuito
   
 ## Light cup
-  ### * Codigo
+  ###  Codigo
   
-  ### * Corrida
+  ###  Corrida
   
   ### * Imagenes del circuito
 
-## Hall Magnetic
-  ### * Codigo
-  
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626305.png" width="347" height="93" alt="Hall Magnetic" /></a>
+  Codigo
+ ```from machine import Pin
+import utime
+
+sensor=Pin(26, Pin.IN)
+utime.sleep(1)
+
+while True:
+    if sensor.value()==1:
+        print("Ningun campo detectado")
+        utime.sleep(1)    
+    else:
+        print("Campo magnetico detectado")
+        utime.sleep(1)
+utime.sleep(1)
+``` 
   ### * Corrida
   
   ### * Imagenes del circuito
   
  
-## Realy
+
   ### * Codigo
   
   ### * Corrida
