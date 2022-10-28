@@ -142,9 +142,24 @@ while True:
   
   ### * Imagenes del circuito
   
-## SMD RGB
-  ### * Codigo
-  
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626308.png" width="244" height="49" alt=" SMD RGB" /></a>
+ Codigo
+```
+from machine import Pin
+import time
+
+led_pins = [16,17,18] # pins where RGB LED is wired
+leds = [Pin(led_pins[0],Pin.OUT),Pin(led_pins[1],Pin.OUT),
+        Pin(led_pins[2],Pin.OUT)] # pin control array
+delay_t = 0.1 # seconds to delay between toggles
+while True: # loop infinitely
+    for led in leds: # loop through each led
+        led.high() # led high
+        time.sleep(delay_t) # wait
+        led.low() # led low
+        time.sleep(delay_t) # wait
+ ```
+
   ### * Corrida
   
   ### * Imagenes del circuito
