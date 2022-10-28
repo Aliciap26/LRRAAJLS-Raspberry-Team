@@ -164,7 +164,42 @@ while True: # loop infinitely
   
   ### * Imagenes del circuito
   
-## Color Flash
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626309.png" width="280" height="79" alt="Color Flash" /></a>
+
+Codigo
+
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626310.png" width="261" height="79" alt="Tilt switch" /></a>
+
+ Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626312.png" width="295" height="90" alt="18B20 Temp" /></a>
+
+Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626313.png" width="295" height="90" alt="Big Sound" /></a>
+
+Codigo
+  
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+
+
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626314.png" width="149" height="73" alt="Touch" /></a>
 
   ### * Codigo
   
@@ -172,64 +207,34 @@ while True: # loop infinitely
   
   ### * Imagenes del circuito
   
-## Tilt switch
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5626315.png" width="225" height="72" alt="Two-color" /></a>
+
+Codigo
+ ```
+from machine import Pin
+import time
+
+led_pins = [16,17] # pins where RGB LED is wired
+leds = [Pin(led_pins[0],Pin.OUT),Pin(led_pins[1],Pin.OUT)] # pin control array
+delay_t = 0.1 # seconds to delay between toggles
+while True: # loop infinitely
+    for led in leds: # loop through each led
+        led.high() # led high
+        time.sleep(delay_t) # wait
+        led.low() # led low
+        time.sleep(delay_t) # wait
+ ```
+  ### * Corrida
+  
+  ### * Imagenes del circuito
+  
+
 
   ### * Codigo
   
   ### * Corrida
   
   ### * Imagenes del circuito
-  
-
-## 18B20 Temp
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-
-## Big Sound
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-
-
-## Touch
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-  
-## Two-color
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-  
-## Laser emit
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
- 
-## Laser emit
-
-  ### * Codigo
-  
-  ### * Corrida
-  
-  ### * Imagenes del circuito
-  
   
 ## Ball switch
 
