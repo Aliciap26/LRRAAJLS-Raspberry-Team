@@ -27,7 +27,7 @@ while True:
     print(" ")
     sleep(2)
 ```
-  ### Corrida
+  ### Corrida.
   
   ### Imagenes del circuito
   
